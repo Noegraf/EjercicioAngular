@@ -1,3 +1,13 @@
+# Ejercicio con Angular
+Este proyecto lo hice sugiendo el curso de Edutin dictado por Bluuweb
+
+# Status
+No está terminado
+
+# Hacer la página
+
+https://github.com/angular-schule/angular-cli-ghpages
+
 # Ejemplo1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
