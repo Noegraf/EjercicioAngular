@@ -1,0 +1,28 @@
+<h1 class="container bg-dark text-white text-center my4 py-2">*ngIf show= {{show}} </h1>
+<div class="text-center">
+    <button class="btn btn-warning" (click)="show=!show">Acción</button> <!--el click tiene declarado que show al ser activado cambia al contrario de el show que este activo y en app.component.ts show empieza como true-->
+    <p class="text-info" *ngIf="show"> <!--*ngIf hace que el elemento este completamente ocuto con una condicion en este caso es *ngIf="show" y depende de la accione del boton superior-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus esse obcaecati voluptatem repudiandae quia, modi saepe velit quod harum officia doloremque labore excepturi similique cum nulla explicabo. In, qui ipsa.
+    </p>
+
+    <p class="text-danger">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at cumque incidunt temporibus, libero doloribus ea est aliquam dolor commodi. Incidunt fugit soluta inventore provident eveniet, ratione atque illum corrupti.
+    </p>
+</div>
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">*ngIf con else showone= {{showone}} </h1>
+
+
+<div class="text-center">
+    <button class="btn btn-warning" (click)="showone=!showone">Acción</button> <!--el click tiene declarado que show al ser activado cambia al contrario de el show que este activo y en app.component.ts show empieza como true-->
+    <p class="text-info" *ngIf="showone; else showDos"> <!--*ngIf hace que el elemento este completamente ocuto con una condicion en este caso es *ngIf="show" y depende de la accione del boton superior-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus esse obcaecati voluptatem repudiandae quia, modi saepe velit quod harum officia doloremque labore excepturi similique cum nulla explicabo. In, qui ipsa.
+    </p>
+   
+<ng-template #showDos>
+    <p class="text-danger">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at cumque incidunt temporibus, libero doloribus ea est aliquam dolor commodi. Incidunt fugit soluta inventore provident eveniet, ratione atque illum corrupti.
+    </p>
+</ng-template>
+
+</div>

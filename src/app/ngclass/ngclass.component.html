@@ -1,0 +1,16 @@
+<h1 class="container bg-dark text-white text-center my4 py-2"> [ngClass] activo = {{activo}} </h1>
+
+<div class="container text-center ">
+    <button class="btn btn-dark mb-3" (click)="activo='primero'">Primero</button>
+    <!---->
+    <button class="btn btn-danger mb-3"(click)="activo='segundo'">Segundo</button>
+    <!--activo es una variable inventada-->
+
+<!--d-none es de boostrap y dice que el elemento esta oculto-->
+
+<div class="d-done" [ngClass]="activo == 'primero' ? 'text-info' : 'text-danger'">{{ activo == 'primero' ? 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at cumque incidunt temporibus, libero doloribus ea
+    est aliquam dolor commodi. Incidunt fugit soluta inventore provident eveniet, ratione atque illum corrupti.' : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad at cumque incidunt temporibus, libero doloribus ea
+    est aliquam dolor commodi. Incidunt fugit soluta inventore provident eveniet, ratione atque illum corrupti.'}}
+</div>
+  
+</div>
