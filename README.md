@@ -8,6 +8,11 @@ No está terminado
 
 https://github.com/angular-schule/angular-cli-ghpages
 
+##Deploy refrescar página
+
+ng deploy --base-href=/the-repositoryname/
+ng pull
+
 # Ejemplo1
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
